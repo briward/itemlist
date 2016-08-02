@@ -7,7 +7,6 @@ use Briward\ItemList\ItemValidation;
 
 class ItemList
 {
-
   private $type;
   private $items;
   private $list_validation;
@@ -56,5 +55,4 @@ class ItemList
   public function getType() {
     return $this->type;
   }
-
 }

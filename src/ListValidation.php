@@ -2,7 +2,7 @@
 
 namespace Briward\ItemList;
 
-abstract class ListValidation
+class ListValidation
 {
   private $validTypes = [
     'boolean',

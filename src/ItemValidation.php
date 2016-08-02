@@ -2,7 +2,7 @@
 
 namespace Briward\ItemList;
 
-abstract class ItemValidation
+class ItemValidation
 {
   public function validate($item, $type)
   {
