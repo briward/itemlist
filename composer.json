@@ -1,0 +1,26 @@
+{
+    "name": "briward/itemlist",
+    "type": "library",
+    "description": "Provides a way to build strongly typed lists of values that can be accessed by index. Provides methods to search, sort, and manipulate lists.",
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "Bri Ward",
+            "email": "me@briward.com"
+        }
+    ],
+    "require": {
+        "php": "^5.6 || ^7.0"
+    },
+    "require-dev": {
+        "phpunit/phpunit": "5.4.*"
+    },
+    "autoload": {
+      "psr-4": {
+        "Briward\\ItemList\\": "src/"
+      }
+    },
+    "scripts": {
+      "test": "phpunit --bootstrap vendor/autoload.php tests"
+    }
+}
