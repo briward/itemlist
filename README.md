@@ -3,7 +3,7 @@ ItemList
 
 [![Build Status](https://travis-ci.org/briward/itemlist.svg?branch=master)](https://travis-ci.org/briward/itemlist)
 
-Provides a way to build strongly typed lists of values that can be accessed by index. Provides methods to search, sort, and manipulate lists. Heavily inspired by the .NET List<T> class.
+Provides a way to build strongly typed lists of values. Provides methods to search, sort, and manipulate lists. Heavily inspired by the .NET List<T> class.
 
 Installation
 ------------
