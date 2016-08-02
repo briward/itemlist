@@ -2,8 +2,8 @@
 
 namespace Briward\ItemList;
 
-class ListValidation {
-
+abstract class ListValidation
+{
   private $validTypes = [
     'boolean',
     'integer',
@@ -18,5 +18,4 @@ class ListValidation {
     if(class_exists($type)) return true;
     throw new \Exception('This type is neither a scalar, compound or defined object.');
   }
-
 }

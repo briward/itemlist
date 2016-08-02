@@ -2,8 +2,8 @@
 
 namespace Briward\ItemList;
 
-class ItemValidation {
-
+abstract class ItemValidation
+{
   public function validate($item, $type)
   {
     $type = gettype($item);
@@ -11,5 +11,4 @@ class ItemValidation {
     if($type === $type) return true;
     throw new \Exception('This item does not match the specified type of "' . $type . '"');
   }
-
 }

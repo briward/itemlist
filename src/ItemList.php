@@ -5,29 +5,12 @@ namespace Briward\ItemList;
 use Briward\ItemList\ListValidation;
 use Briward\ItemList\ItemValidation;
 
-/**
- * Class List
- */
-class ItemList {
+class ItemList
+{
 
-  /**
-   * @var string
-   */
   private $type;
-
-  /**
-   * @var array
-   */
   private $items;
-
-  /**
-   * @var ListValidation
-   */
   private $list_validation;
-
-  /**
-   * @var ItemValidation
-   */
   private $item_validation;
 
   public function __construct($type) {
@@ -72,13 +55,6 @@ class ItemList {
 
   public function getType() {
     return $this->type;
-  }
-
-  private function validateItemType($item) {
-    $type = gettype($item);
-    if($type === 'object') $type = get_class($item);
-    if($type === $this->type) return true;
-    throw new \Exception('This item does not match the specified type of "' . $this->type . '"');
   }
 
 }
